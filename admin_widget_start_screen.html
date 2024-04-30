@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="icon" type="image/png" href="logo1.png"/>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <style>
+        body {
+            text-align: center;
+            color: #483D8B;
+            background-color: #DCDCDC;
+            transition: background-color 0.5s ease;
+        }
+
+        a {
+            text-decoration: none;
+            color: #483D8B;
+            padding: 10px;
+            border-radius: 5px;
+            transition: background-color 0.5s ease, color 0.5s ease;
+        }
+
+        a:hover {
+            background-color: #483D8B;
+            color: #DCDCDC;
+        }
+
+        #header {
+            text-align: center;
+            margin-bottom: 50px;
+            transition: color 0.5s ease;
+        }
+
+        #header:hover {
+            color: #483D8B;
+        }
+
+        #buttons-container {
+            display: flex;
+            justify-content: center;
+        }
+
+
+
+        #table, #product, #start ,#user_acc,#stat{
+            opacity: 0.7;
+            transition: opacity 0.3s ease;
+            background-color: #483D8B;
+            color: white;
+            border: none;
+            border-radius: 10px;
+            padding: 10px;
+            margin: 10px;
+            cursor: pointer;
+            box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.2);
+            font-size: 18px;
+
+        }
+
+        #table:hover, #product:hover, #start:hover,#user_acc:hover, #stat:hover {
+            opacity: 1;
+
+        }
+        #table:hover:active{
+            background-color: orange;
+        }#product:hover:active{
+            background-color: deepskyblue;
+        }#start:hover:active{
+            background-color: black;
+        }
+        #user_acc:hover:active{
+             background-color: #45a049;
+         }
+        #stat:hover:active{
+            background-color: #00007d;
+        }
+    </style>
+</head>
+<body>
+<div>
+    <h1 id="header">ВИДЖЕТ АДМИНИСТРАТОРА</h1>
+    <title>сайт завода.виджет администратора.</title><br><p></p>
+
+    <a id="table" href='http://localhost/bd2/index.php'>перейти к таблице заказов</a>
+    <br>
+    <p><br></p>
+    <a id="product" href='http://localhost/bd/index.php'>перейти к виджету изменения характеристик продукции</a>
+    <br>
+    <p><br></p>
+    <a id="user_acc" href='http://localhost/bd3/index_base_user_acc.php'>посмотреть аккаунты юзеров</a>
+    <p><br></p>
+    <a id="stat" href='stat.php'>посмотеть статистику</a>
+    <p><br></p>
+    <a id="start" href='start_screen.html'>на стартовую страницу</a>
+
+    <!--создать виджет для показа возможных таблиц и 3 функции - для каждой таблицы
+    - создать кнопку удаления и изменения + сделать отдельную кнопку для создания таблицы-->
+</div>
+
+</body>
+</html>

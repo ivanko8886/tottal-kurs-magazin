@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <link rel="icon" type="image/png" href="logo1.png"/>
+
+  <link rel="stylesheet" href="style3.css" type="text/css" />
+  <title>Заказ товара.вид пользователя.</title>
+</head>
+<body>
+
+<h1 class="heading">Заказ товаров</h1><p></p>
+
+<form action="http://localhost/bd5/index.php" method="post">
+  <div class="wrapper">
+  <label for="data1">Введите ваш id(до 20 символов):</label>
+  <input placeholder="input your id" type="text" id="data1" name="data1"  required><br>
+  <p></p>
+  <label for="data2">Введите имя или id продукта:</label>
+  <input placeholder="input name or production id" type="text" id="data2" name="data2" required><br><!--ЗАМЕНИТЬ ЭТО ПОЛЕ НА ПОЛЕ ПОИСКА\ВЫБОРА ИЗ ФОРМ ADMIN_PRODUCT.HTML
+  ПРИ ТОМ ИМЯ ТОВАРА УКАЗЫВАЛОСЬ КАК ЕГО ID\ИМЯ ИЗ ФОРМЫ-->
+  <p></p>
+  <label for="data3">Введите количество продукции(до 10000):</label>
+  <input placeholder="input count" type="text" id="data3" name="data3"  required><br>
+  <p></p>
+  <label for="data4">Цена за единицу:</label><!--АВТОМАТИЧЕСКИ ИЗ ФОРМЫ-->
+  <input placeholder="price" type="text" id="data4" name="data4" required><br>
+  <p></p>
+  <label for="data5">Итоговая стоимость:</label><!--АВТОМАТИЧЕСКИЙ РАСЧЕТ-->
+  <input placeholder="cost" type="text" id="data5" name="data5" required><br>
+    <p></p>
+    <label>нужна доставка?</label><p></p>
+    <select id="actSelect" class="Validate_Required " name="actSelect" aria-required="true" onChange="Selected(this)">
+      <option value="3">нет</option>
+      <option value="2">да</option>
+    </select>
+
+    <div id='Block2' style='display: none;'><br>
+      <label for="data7">Время доставки:</label><!--АВТОМАТИЧЕСКИЙ РАСЧЕТ-->
+      <input placeholder="delivery time" type="text" id="data7" name="data7" required><br>
+      <div id='Block1' style='display: none;'>
+      </div>
+    </div>
+     <p></p>
+    <label for="data8">Время изготовления:</label><!--АВТОМАТИЧЕСКИЙ РАСЧЕТ-->
+    <input placeholder="production time" type="text" id="data8" name="data8" required><br>
+    <p></p>
+    <form style="padding: 15px 0px 60px;" action="http://localhost/bd5/index.php" method="get">
+      <button style="width:150px;border-radius: 25px">отправить заказ</button>
+    </form>
+    <form><p></p>
+<input  type="button" onclick="location.href='main_widget.html';" value="Переход на главный экран" /><p></p>
+<input type="button" onclick="location.href='start_screen.html';" value="Переход на стартовый экран" />
+</form>
+  </div>
+</form>
+
+<script>
+  function Selected(a) {
+    var label = a.value;
+    if (label==1) {
+      document.getElementById("Block1").style.display='block';
+      document.getElementById("Block2").style.display='none';
+    } else if (label==2) {
+      document.getElementById("Block1").style.display='none';
+      document.getElementById("Block2").style.display='block';
+    } else {
+      document.getElementById("Block1").style.display='none';
+      document.getElementById("Block2").style.display='none';
+    }
+
+  }
+</script>
+</body>
+</html>

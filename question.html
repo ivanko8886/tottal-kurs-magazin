@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<link rel="icon" type="image/png" href="logo1.png"/>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Регистрация и просмотр ID</title>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 25px;
+            background: linear-gradient(to right, #990000, #FF9966, #FFFF66, #99FF99, #00B3E6);
+            animation: gradient 3s ease infinite;
+        }
+
+        h1, p {
+            text-align: center;
+            margin-bottom: 50px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-weight: bold;
+        }
+
+        button {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 10px;
+            padding: 10px;
+            margin: 10px;
+            cursor: pointer;
+            box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.2);
+            transition: all 0.3s ease;
+            width: 200px;
+            font-size: 18px;
+        }
+
+        button:hover {
+            box-shadow: 0px 14px 14px rgba(0, 0, 0, 0.4);
+        }
+        #but:hover {
+            background-color: darkslategray;
+        }
+        #but_1:hover {
+            background-color: blue;
+        }
+
+        #but_2:hover {
+            background-color: purple;
+        }
+        #but:hover:active {
+            background-color: red;
+        }
+        #but_1:hover:active {
+            background-color: red;
+        }
+
+        #but_2:hover:active {
+            background-color: red;
+        }
+    </style>
+</head>
+
+<body>
+
+<p>Хотите ли вы завести аккаунт?<br>
+<button id="but" onclick="showRegistrationWidget()">ДА</button>
+<button id="but_1" onclick="location.href='main_widget.html'">НЕТ</button></p>
+<br><p>Или хотите посмотреть свой id?<br>
+<button id="but_2" onclick="showIdWidget()">Посмотреть id</button>
+</p>
+<script>
+    function showRegistrationWidget() {
+        window.location.href = "http://localhost/bd3/index.php";
+    }
+
+    function showIdWidget() {
+        window.location.href = "look_for_id.html";
+    }
+</script>
+</body>
+</html>

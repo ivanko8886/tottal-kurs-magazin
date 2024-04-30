@@ -1,0 +1,8 @@
+#but_1:hover{ outline-color: transparent;
+
+    outline-style:solid;
+    box-shadow: 0 0 0 4px #5a01a7;}
+#but_2:hover{
+    outline-color: transparent;
+    outline-style:solid;
+    box-shadow: 0px 0 0 4px #5a01a7;}

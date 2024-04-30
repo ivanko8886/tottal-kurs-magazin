@@ -1,0 +1,11 @@
+#but_1{
+    float: right;
+    background-color: aquamarine;border-color: #9370DB ; padding: 10px;
+    border-radius: 10px;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    margin:10px;
+    position: absolute;
+    top:10px;
+
+}

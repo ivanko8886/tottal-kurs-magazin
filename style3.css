@@ -1,0 +1,66 @@
+body {
+  margin: 40px;
+  background: #17A2B8;;
+}
+
+h1.heading {
+  position: absolute;
+  top: 10px;
+
+
+}
+
+.box {
+  max-width: 720px;
+  margin: auto;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.flex {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.w-100 {
+  min-width: 100%;
+}
+
+.add-container {
+  margin-top: 35px;
+}
+.wrapper{
+  width: 443px;
+  border-radius: 7px;
+  background: #F5F5F5;
+  padding: 30px 25px 40px;
+  box-shadow: 0 10px 15px rgba(10,0,0,100);
+  margin: 100px 425px;
+}
+.wrapper :where(textarea, input){
+  width: 100%;
+  outline: none;
+  border: none;
+  font-size: 17px;
+  border-radius: 5px;
+  color: #5a01a7;
+  margin:  5px ;
+}
+.wrapper :where(textarea, input)::placeholder{
+  color: #17A2B8;
+}
+.wrapper :where(textarea, input):focus{
+  box-shadow: 10px 2px 4px rgba(100,0,0);
+}
+@media screen and (max-width: 475px) {
+  .wrapper{
+
+    padding: 25px 18px 30px;
+  }
+}
